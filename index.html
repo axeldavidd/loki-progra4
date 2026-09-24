@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loki — Archivo de Variantes</title>
+  <meta name="description" content="Una guía retrofuturista, no oficial, para explorar las temporadas, personajes y ubicaciones de Loki.">
+  <meta property="og:title" content="Loki">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="loki-shell">
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand-lockup" href="#">
+        <span class="brand-seal"><img src="img/loki-logo-clean.webp" alt="Emblema de Loki"></span>
+      <!--<span class="brand-type"><strong>LOKI</strong><small>ARCHIVO DE VARIANTES</small></span>-->
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#" data-route="">INICIO</a>
+
+        <div class="season-nav-item" id="season-nav-item">
+          <button class="season-nav-trigger" id="season-nav-trigger" type="button" aria-haspopup="true">
+            TEMPORADAS <span>&#9670;</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="season-nav-menu">
+            <button type="button" onclick="location.hash='temporadas/temporada-1'">Temporada 1</button>
+            <button type="button" onclick="location.hash='temporadas/temporada-2'">Temporada 2</button>
+          </div>
+        </div>
+
+        <a href="#personajes" data-route="personajes">PERSONAJES</a>
+        <a href="#galeria" data-route="galeria">GALERÍA</a>
+        <a href="#contacto" data-route="contacto">CONTACTO</a>
+      </nav>
+
+      <button class="header-status" id="header-status" type="button">
+        <span class="status-dot"></span> ESTADO: ESTABLE
+      </button>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </header>
+
+    <main id="view-root"></main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="footer-mark">L</span>
+        <div><strong>LOKI</strong></div>
+      </div>
+      <p>Sitio de fans no oficial. Loki y todos los personajes relacionados pertenecen a Marvel Studios y Disney.</p>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X">X</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+      </div>
+      <div class="footer-legal">
+        <span>© AUTORIDAD DE VARIACIÓN TEMPORAL</span>
+        <span>SITIO NO OFICIAL // NO AFILIADO A MARVEL/DISNEY</span>
+      </div>
+    </footer>
+
+    <div class="notice" id="notice" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
